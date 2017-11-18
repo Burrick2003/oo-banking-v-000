@@ -8,10 +8,10 @@ attr_accessor :balance, :status
     @@accounts << self
   end
   def name
-    self.name
+    @name
   end
   def deposit(deposit)
-    @balance = @balance + deposit
+    self.balance = self.balance + deposit
   end
   def display_balance
     "Your balance is $#{@balance}."
