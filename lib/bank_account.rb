@@ -14,7 +14,7 @@ attr_accessor :balance, :status
     self.balance = self.balance + deposit
   end
   def display_balance
-    "Your balance is $#{@balance}."
+    "Your balance is $#{self.balance}."
   end
   def valid?
     self.status == "open" && self.balance > 0
