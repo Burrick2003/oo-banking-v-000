@@ -3,8 +3,8 @@ attr_accessor :balance, :status
 @@accounts = []
   def initialize(name)
     @name = name
-    @balance = 1000
-    @status = "open"
+    self.balance = 1000
+    self.status = "open"
     @@accounts << self
   end
   def name
