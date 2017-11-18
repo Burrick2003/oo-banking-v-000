@@ -14,7 +14,7 @@ attr_accessor :balance, :status
     @balance
   end
   def self.valid?(name)
-    name.status == "open" && name.balance >= 0
+    name.status == "open" && name.balance > 0
   end
   def self.close_account(name)
 
