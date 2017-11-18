@@ -18,19 +18,17 @@ attr_accessor :sender, :receiver, :amount, :status
       @receiver.balance = @receiver.balance + amount
       @status = "complete"
     elsif @sender.balance < self.amount
-
       @status = "rejected"
       "Transaction rejected. Please check your account balance."
     end
   end
 
-
-
-
-
-
-
-
-
+  def reverse_transaction
+    if @status = "complete"
+      @receiver.balance = @receiver.balance - amount
+      @sender.balance = @sender.balance + amount
+      @status = "reversed"
+    end
+  end
 
 end
