@@ -1,5 +1,5 @@
 class BankAccount
-attr_accessor :name, :balance, :status
+attr_accessor :balance, :status
 @@accounts = []
   def initialize(name)
     @name = name
