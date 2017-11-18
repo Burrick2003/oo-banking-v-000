@@ -7,7 +7,7 @@ attr_accessor :sender, :receiver, :amount
     @previous = 0
   end
 
-  def
+
 
 
 
