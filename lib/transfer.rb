@@ -9,7 +9,7 @@ attr_accessor :sender, :receiver, :amount, :status
   end
 
   def valid?
-
+    sender.balance > self.amount && sender.status == "open" && receiver.status == "open"
   end
 
 
