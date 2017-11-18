@@ -8,7 +8,7 @@ attr_accessor :balance, :status
     @@accounts << self
   end
   def name(name_input)
-    name_input.name
+    @name
   end
 
   def deposit(deposit)
