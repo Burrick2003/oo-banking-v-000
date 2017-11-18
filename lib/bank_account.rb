@@ -1,9 +1,11 @@
 class BankAccount
 attr_accessor :name, :balance, :status
+@@accounts = []
   def initialize(name)
     @name = name
     @balance = 1000
     @status = "open"
+    @@accounts << self
   end
   def deposit(deposit)
     @balance = @balance + deposit
@@ -13,6 +15,9 @@ attr_accessor :name, :balance, :status
   end
   def self.valid?(name)
     name.status == "open" && name.balance >= 0
+  end
+  def self.close_account(name)
+
   end
 
 
