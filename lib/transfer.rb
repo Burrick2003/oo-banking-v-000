@@ -17,7 +17,8 @@ attr_accessor :sender, :receiver, :amount, :status
       @sender.balance = @sender.balance - amount
       @receiver.balance = @receiver.balance + amount
       @status = "complete"
-
+    elsif @sender.balance < self.amount
+      "Transaction Rejected. Please check your account balance."
     end
   end
 
