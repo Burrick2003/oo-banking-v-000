@@ -8,6 +8,9 @@ attr_accessor :sender, :receiver, :amount, :status
     @previous = 0
   end
 
+  def valid?
+
+  end
 
 
 
