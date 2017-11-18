@@ -4,6 +4,7 @@ attr_accessor :sender, :receiver, :amount
     self.sender = send_name
     self.receiver = rec_name
     self.amount = money
+    @status = "pending"
     @previous = 0
   end
 
