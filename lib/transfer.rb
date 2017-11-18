@@ -9,10 +9,15 @@ attr_accessor :sender, :receiver, :amount, :status
   end
 
   def valid?
-    @sender.valid? && @receiver.valid?
+    @sender.valid? && @sender.balance > self.amount && @receiver.valid?
   end
 
+  def execute_transaction
+    if self.status == "pending"
+      
 
+    end
+  end
 
 
 
