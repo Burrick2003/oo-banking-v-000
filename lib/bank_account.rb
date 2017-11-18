@@ -7,7 +7,7 @@ attr_accessor :balance, :status
     @status = "open"
     @@accounts << self
   end
-  def name(name_input)
+  def name
     @name
   end
 
